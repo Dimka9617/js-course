@@ -3,6 +3,7 @@
 
 let a = parseFloat(prompt('Enter the a', ''))
 let b = parseFloat(prompt('Enter the b', ''))
+let c = parseFloat(prompt('Enter the c', ''))
 
 // --------------------------------------------
 
