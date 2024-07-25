@@ -1,0 +1,41 @@
+@use "sass:math";
+// -----------------------
+@import '_mixins.scss';
+@import '_reset.scss';
+// -------------------------  
+
+  body {
+	min-height: 100svh;
+	background: url(../img/js-back.jpg) 0 0 / auto 100% no-repeat fixed;
+	padding: toRem(20) toRem(15);
+  }
+//   ------------------------------
+  h1{
+	font-size: toRem(70);
+	margin-bottom: toRem(30);
+  }
+//   -------------------------------------
+  ul{
+	display: flex;
+	flex-direction: column;
+	row-gap: toRem(15);
+	align-items: flex-start;
+  }
+  ul li{
+	font-size: toRem(18);
+	@media(any-hover:hover){
+		&:hover a{
+			padding-left: toRem(10);	
+		}
+	}
+	@media(any-hover:none){
+		&:active{
+	
+		}
+	}
+	
+  }
+  ul li a{
+	transition: all 0.3s;
+	
+  }
