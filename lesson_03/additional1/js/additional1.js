@@ -14,6 +14,10 @@ else if (enterNumber === emotiontwo)
 	<img src="/img/smile/sad.webp" alt="Sad smile">
 	`)
 else
-document.write(`
+	document.write(`
 	<img src="/img/smile/angry.jpg" alt="Angry smile">
 	`)
+
+
+	let c = 3%7
+	console.log(c)
