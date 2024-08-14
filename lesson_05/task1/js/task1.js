@@ -172,28 +172,28 @@
 // ================================================================================HOMEWORK===========================================================================================
 
 												// Задача -2. Поступово генерувати 100 випадкових чисел від 1 до 1000. Підрахувати яких чисел більше: парних чи непарних
-let evenNumbers = 0
-let oddNumbers = 0
-for (let i = 1; i <= 100; i++){
-const randomNumber = Math.floor(Math.random() * 1000) + 1
-if(randomNumber%2 === 0)
-	evenNumbers++
-else 
-	oddNumbers++
-}
-document.write(`
-<table style='margin:40px 20px'  border="2px">
-	<tr>
-		<th>Even numbers</th>
-		<th>${evenNumbers}</th>
-	</tr>
-	<tr>
-		<th>Odd numbers</th>
-		<th>${oddNumbers}</th>
-	</tr>
+// let evenNumbers = 0
+// let oddNumbers = 0
+// for (let i = 1; i <= 100; i++){
+// const randomNumber = Math.floor(Math.random() * 1000) + 1
+// if(randomNumber%2 === 0)
+// 	evenNumbers++
+// else 
+// 	oddNumbers++
+// }
+// document.write(`
+// <table style='margin:40px 20px'  border="2px">
+// 	<tr>
+// 		<th>Even numbers</th>
+// 		<th>${evenNumbers}</th>
+// 	</tr>
+// 	<tr>
+// 		<th>Odd numbers</th>
+// 		<th>${oddNumbers}</th>
+// 	</tr>
 
-</table>
-`)
+// </table>
+// `)
 
 																									// Задача -1. Вивести на екран номери місяців весни і літа (від 3 до 8)	
 																									
@@ -354,16 +354,13 @@ document.write(`
 
 																						// 14. Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до тих пір, поки суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно ввести). 
 
-
-// const bill = parseFloat(prompt("Need to pay :"))
-// let userTotal = 0
-// let userPay = parseFloat(prompt("I pay:"))
-// while(bill > userTotal){
-// 	userTotal += userPay
-// 	alert(`You paid ${userPay}, left to pay ${bill - userTotal}`)
-// 	userPay = parseFloat(prompt("I pay:"))
-// }
-// alert('succes')
+// const bill = 10
+// let total = 0
+// do {
+// 	let payed = parseInt(prompt(`Need to pay ${bill}. You paid ${total}, left to pay ${bill - total}`))
+// 	total +=payed
+// } while (bill > total);
+// alert(`complete`)
 
 																						// Задача 15. Користувача поступово вводить показники температури протягом року. Знайти середню температуру.
 // let total = 0		
@@ -435,3 +432,56 @@ document.write(`
 // </div>
 // `)
 
+																								// ПОСТРОЕНИЕ ДИАГРАММ ===================================================================
+// document.write(`<div style="background-color:black; height:500px; width:800px; display:flex; gap:50px; align-items:flex-end;">`)
+// for(let i = 0; i <5; i++){
+// 	let randNumb
+// 	document.write(`<div style="display:flex;justify-content:center;align-items:center; background-color:yellow; width:5%; height:${randNumb = 1 +Math.floor(Math.random() * 100)}%">${randNumb}%</div>`)
+// }
+
+// document.write(`</div>`)
+
+												// 6. На складі зберігається певна кількість ящиків з яблуками (наприклад, 15). Коли під’їде машина для завантаження, попросити користувача ввести, скільки ящиків завантажити у першу машину, у другу і т. д., поки на складі не закінчаться ящики з яблуками. Передбачити той випадок, коли користувач вводить кількість, що перевищує поточну кількість ящиків на складі.
+// const bill = 10
+// let total = 0
+// do {
+// 	let payed = parseInt(prompt(`Need to pay ${bill}. You paid ${total}, left to pay ${bill - total}`))
+// 	total +=payed
+// } while (bill > total);
+// alert(`complete`)
+
+
+
+// const boxQuantity = parseInt(prompt("Enter the number :"))		
+// let totalTransfer=0
+
+// loop:do {
+// 	let transferToCar = parseInt(prompt(`How many boxes transfer to the car? We have ${boxQuantity}, you transfered ${totalTransfer}, left to transfer ${boxQuantity-totalTransfer}`))
+// 	alert(`${boxQuantity - transferToCar} boxes left`)
+// 	if(transferToCar > boxQuantity){
+// 		alert("We dont have this quantity") 
+// 		break loop
+// 	}
+// 	totalTransfer+=transferToCar
+
+// } while (boxQuantity > totalTransfer);	
+
+
+
+
+
+
+
+// const boxQuantity = parseInt(prompt("Enter the number :"))
+// let totalTransfer=0
+// let succes = true
+// loop:for (let b = boxQuantity; b>0; b--){
+// 	let transferToCar = parseInt(prompt(`How many boxes transfer to the ${b}car? We have ${boxQuantity}, you transfered ${totalTransfer}, left to transfer ${boxQuantity-totalTransfer}`))
+// 	if(transferToCar > boxQuantity){
+// 				alert("We dont have this quantity") 
+// 				break loop
+// 			}
+// 	totalTransfer+=transferToCar
+// }
+// if(!succes)
+// alert("complete")
