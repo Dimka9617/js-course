@@ -89,61 +89,63 @@
 // document.write(`${season}`)
 
 																													// Задача 1. Створити функцію, яка за номером місяця повертає його назву.
-function getNameOfTheMonth () {
-	let userNumber = parseInt(prompt("Enter the month number"))
-	let result
-	switch (userNumber) {
-		case 1:
-			result ='January'
-			break;
+
+// let userNumber = parseInt(prompt("Enter the month number"))
+// function getNameOfTheMonth (userNumber) {
+// 	let result
+// 	switch (userNumber) {
+// 		case 1:
+// 			result ='January'
+// 			break;
 	
-		case 2:
-			result ='February'
-			break;
+// 		case 2:
+// 			result ='February'
+// 			break;
 	
-		case 3:
-			result ='March'
-			break;
+// 		case 3:
+// 			result ='March'
+// 			break;
 	
-		case 4:
-			result ='April'
-			break;
+// 		case 4:
+// 			result ='April'
+// 			break;
 	
-		case 5:
-			result ='May'
-			break;
+// 		case 5:
+// 			result ='May'
+// 			break;
 	
-		case 6:
-			result ='June'
-			break;
+// 		case 6:
+// 			result ='June'
+// 			break;
 	
-		case 7:
-			result ='July'
-			break;
+// 		case 7:
+// 			result ='July'
+// 			break;
 	
-		case 8:
-			result ='August'
-			break;
+// 		case 8:
+// 			result ='August'
+// 			break;
 	
-		case 9:
-			result ='September'
-			break;
+// 		case 9:
+// 			result ='September'
+// 			break;
 	
-		case 10:
-			result ='October'
-			break;
+// 		case 10:
+// 			result ='October'
+// 			break;
 	
-		case 11:
-			result ='November'
-			break;
+// 		case 11:
+// 			result ='November'
+// 			break;
 	
-		case 12:
-			result ='December'
-			break;
-	}
-	return result
-}
-document.write(`<div>${getNameOfTheMonth()}</div>`)
+// 		case 12:
+// 			result ='December'
+// 			break;
+// 	}
+// 	return result
+// }
+// document.write(`<div>${getNameOfTheMonth(userNumber)}</div>`)
+
 
 																									// Задача 2. Створити функцію, яка за номером дня дозволяє з’ясувати чи є цей день робочим.
 // function showTypeDay(){
